@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "BatteryMonitor",
+  "short_name": "BatteryMonitor",
+  "description": "",
+  "version": "0.0.1",
+  "minimum_chrome_version": "38",
+  "icons": {
+    // "16": "assets/icon_16.png",
+    "128": "assets/battery_icon.png"
+  },
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  // "browser_action": {
+  //   "default_popup": "popup.html",
+  //   "default_icon": "assets/icon_16.png"
+  // },
+  "permissions": [
+    "alarms",
+    "storage",
+    "background",
+    "notifications",
+    "unlimitedStorage",
+    "fileSystem",
+    "fileSystem.write"
+  ]
+}
